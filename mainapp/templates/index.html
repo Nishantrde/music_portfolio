@@ -48,7 +48,6 @@
 
         section {
             padding: 20px;
-            text-align: center;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -61,20 +60,14 @@
         }
 
         section p {
-            text-align: center;
             font-size: 16px;
             line-height: 1.6;
+            margin: 0;
         }
 
-        .music-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .music-item {
-            width: 45%;
-            margin-bottom: 20px;
+        .content-wrapper {
+            text-align: left;
+            padding-left: 20px;
         }
 
         footer {
@@ -98,6 +91,18 @@
         .social-links li a {
             color: #fff;
             text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 0 10px;
+            }
+
+            section p {
+                text-align: left;
+                padding-left: 0;
+            }
         }
     </style>
 </head>
@@ -129,22 +134,14 @@
         <div class="container">
             <h2>Music Band Quote For 15th June 2024 <br>
                 TO HURL Sindri Dhanbad</h2><br>
-            <h3>
-            <pre>
-Singers     2 Male & Female <br>
-                
-                                            Musicians   Keyboard, Electric Guitar, Bass Guitar, E Drum (Octopad), Nal <br>
-
-    Sound       2 Pairs of Speakers <br>
-                4 High 4 Low Speakers <br>
-                            4 Feedback Speakers Mixer & Mics, <br>
-
-        Lighting    8 Par lights with Stands <br>
-            4 Movable Lights <br>
-
-One Announcer (Mole) + Transportation Included <br>
-            </pre>
-            </h3>
+            <div class="content-wrapper">
+                <h3>Details:</h3>
+                <p>Singers: 2 Male & Female <br>
+                Musicians: Keyboard, Electric Guitar, Bass Guitar, E Drum (Octopad), Nal <br>
+                Sound: 2 Pairs of Speakers, 4 High 4 Low Speakers, 4 Feedback Speakers Mixer & Mics <br>
+                Lighting: 8 Par lights with Stands, 4 Movable Lights <br>
+                One Announcer (Mole) + Transportation Included </p>
+            </div>
         </div>
     </section>
     <section id="amount">
@@ -179,7 +176,6 @@ Annual turnover of the company less than 20 Lacs, no Company GST applicable. <br
             <h2>Contact Me</h2>
             <h2>Phone: 9905112535</h2>
             <p>Feel free to reach out to me via email at <a href="mailto:ajaykr2535@gmail.com">ajaykr2535@gmail.com</a> or through my social media profiles:</p>
-            
         </div>
     </footer>
 </body>
